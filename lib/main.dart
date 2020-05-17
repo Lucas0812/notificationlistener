@@ -5,16 +5,15 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'NotificationListener',
       theme: ThemeData(
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(title: 'NotificationListener'),
     );
   }
 }
@@ -38,7 +37,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
           child: NotificationListener<ScrollNotification>(
         onNotification: (notification) {
-          print('notification');
+          print('$notification');
           return true;
         },
         child: SingleChildScrollView(
