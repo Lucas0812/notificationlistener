@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'NotificationListener',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.grey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'NotificationListener'),
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           const BorderRadius.all(Radius.circular(4.0)),
                     ),
                     child: Center(
-                      child: Text('Teste'),
+                      child: Text('NotificationListener'),
                     ),
                   ),
                 )
